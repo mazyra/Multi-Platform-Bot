@@ -1,0 +1,13 @@
+.env
+venv/
+utils/db.py
+*.db
+*.sqlite
+__pycache__/
+*.pyc
+*.log
+data/cookies.txt
+downloads/
+config.py
+Project.txt
+insta-bot.zip

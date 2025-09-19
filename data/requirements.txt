@@ -1,0 +1,7 @@
+aiogram==3.21.0
+requests==2.32.4
+yt_dlp
+asyncpg
+beautifulsoup4
+lxml
+instaloader
