@@ -1,6 +1,6 @@
 # Multi Platform Bot
 
-SocialVideoBot is a Python-based automated bot for managing social media content.  
+Multi Platform Bot is a Python-based automated bot for managing social media content.  
 It currently supports **Instagram** and **YouTube Shorts**, and is designed to handle multiple types of media efficiently.
 
 ## Features
