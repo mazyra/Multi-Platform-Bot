@@ -172,6 +172,8 @@ def download_instagram_media(url: str) -> dict:
             post_metadata_txt_pattern="",
         )
 
+        session = _build_session()
+        L.context._session = session
         post = instaloader.Post.from_shortcode(L.context, shortcode)
         caption = post.caption or caption
 

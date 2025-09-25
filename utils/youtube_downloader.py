@@ -48,10 +48,10 @@ def download_youtube_media(url: str) -> dict:
 
     ydl_opts = {
         "outtmpl": os.path.join(DOWNLOAD_PATH, "%(id)s.%(ext)s"),
-        "format": "bestvideo+bestaudio/best",
+        "format": "best[ext=mp4]/best",
         "merge_output_format": "mp4",
         "noplaylist": True,
-        "quiet": True,
+        "quiet": True
     }
 
     try:
