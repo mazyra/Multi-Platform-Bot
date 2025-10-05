@@ -60,4 +60,8 @@ async def link_handler(message: Message):
     except Exception as e:
         error_text = f"❌ خطا در پردازش:\n<code>{html.escape(str(e))}</code>"
         await message.bot.send_message(chat_id=ADMIN_ID, text=error_text)
-        await message.answer("❌ متأسفانه مشکلی در پردازش لینک پیش آمد.")
+        await message.answer(
+        "❌ ربات نتوانست محتوای شما را دریافت کند.\n"
+        "این مشکل ممکن است به دلیل صفحه خصوصی، حجم زیاد فایل، یا خطایی در پردازش باشد.\n\n"
+        "برای کمک،خطا را به ادمین گزارش دهید: @Mazyraaa"
+    )

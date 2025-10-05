@@ -44,3 +44,8 @@ async def handle_youtube_content(message: Message):
         error_text = f"❌ خطا در پردازش یوتیوب:\n<code>{html.escape(str(e))}</code>"
         await message.bot.send_message(chat_id=ADMIN_ID, text=error_text)
         await message.answer("❌ مشکلی در پردازش لینک یوتیوب پیش آمد.")
+        await message.answer(
+        "❌ ربات نتوانست محتوای شما را دریافت کند.\n"
+        "این مشکل ممکن است به دلیل صفحه خصوصی، حجم زیاد فایل، یا خطایی در پردازش باشد.\n\n"
+        "برای کمک،خطا را به ادمین گزارش دهید: @Mazyraaa"
+    )
